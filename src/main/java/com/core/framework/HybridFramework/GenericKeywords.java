@@ -24,7 +24,7 @@ import org.openqa.selenium.firefox.internal.ProfilesIni;
 import com.core.framework.HybridFramework.util.Constants;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
+import org.testng.Assert;
 //import junit.framework.Assert;
 
 public class GenericKeywords{
