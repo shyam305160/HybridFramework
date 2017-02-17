@@ -30,9 +30,13 @@ public static WebDriver getDesiredDriver(String browserName, WebDriver driver)
 	{
 		if(browserName.equalsIgnoreCase(Constants.FIREFOX))
 		{
-				ProfilesIni profile = new ProfilesIni();
-				FirefoxProfile myprofile = profile.getProfile("ShyamSelenium");
-				driver=new FirefoxDriver(myprofile);
+				//ProfilesIni profile = new ProfilesIni();
+				//FirefoxProfile myprofile = profile.getProfile("ShyamSelenium");
+				//driver=new FirefoxDriver(myprofile);
+
+			 File pathToFirefoxBinary = new File("C:\\Program Files\\Mozilla Firefox\\firefox.exe");  
+		        FirefoxBinary firefoxbin = new FirefoxBinary(pathToFirefoxBinary);
+			driver=new FirefoxDriver(firefoxbin,null);
 		}else if(browserName.equalsIgnoreCase(Constants.CHROME))
 		{
 				System.setProperty("webdriver.chrome.driver", "E:\\Rakesh\\SeleniumComponents\\chrome\\chromedriver.exe");
