@@ -25,7 +25,7 @@ import com.core.framework.HybridFramework.util.Constants;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import junit.framework.Assert;
+//import junit.framework.Assert;
 
 public class GenericKeywords{
 	public WebDriver driver;
